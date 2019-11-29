@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class="row">
+    <h1> Configura il Bottone </h1>
+  </div>
+  <div class="row">
+    <label> Colore Sfondo: </label>
+    <select class="form-control" [(ngModel)]="concreteButton.backgroundColor">
+      <option value="red"> Rosso</option>
+      <option value="black"> Nero</option>
+      <option value="yellow"> Giallo</option>
+      <option value="green"> Verde</option>
+    </select>
+    <br>
+    <label> Grandezza Bordo: </label>
+    <select class="form-control" [(ngModel)]="concreteButton.border">
+      <option value="0.5 px solid"> 0.5 px</option>
+      <option value="1 px solid"> 1 px</option>
+      <option value="2 px solid"> 2 px</option>
+      <option value="3 px solid"> 3 px</option>
+    </select>
+    <br>
+    <label> Testo: </label>
+    <input [(ngModel)]="concreteButton.textValue">
+    <br>
+    <label> Colore Testo: </label>
+    <select class="form-control" [(ngModel)]="concreteButton.textColor">
+      <option value="red"> Rosso</option>
+      <option value="black"> Nero</option>
+      <option value="yellow"> Giallo</option>
+      <option value="green"> Verde</option>
+    </select>
+  </div>
+  <app-button-interface [interfaceButton]="concreteButton"></app-button-interface>
+</div>
+
+
