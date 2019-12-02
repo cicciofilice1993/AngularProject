@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ButtonInterfaceComponent } from './button-interface/button-interface.component';
 import { ConcreteButtonComponent } from './concrete-button/concrete-button.component';
 import {FormsModule} from '@angular/forms';
+import { TableInterfaceComponent } from './table-interface/table-interface.component';
+import { ConcreteTableComponent } from './concrete-table/concrete-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonInterfaceComponent,
-    ConcreteButtonComponent
+    ConcreteButtonComponent,
+    TableInterfaceComponent,
+    ConcreteTableComponent
   ],
     imports: [
         BrowserModule,
