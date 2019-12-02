@@ -1,0 +1,13 @@
+
+<table class="table-dark">
+  <thead>
+    <tr>
+      <th *ngFor="let header of interfaceTable.intestazione">{{header.nomeAttributoColonna}}</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let row of interfaceTable.dato">
+        <td *ngFor="let column of interfaceTable.intestazione">{{row[column.idColonna]}}</td>
+      </tr>
+  </tbody>
+</table>
